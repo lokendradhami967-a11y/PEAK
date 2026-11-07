@@ -1,0 +1,29 @@
+
+{% extends "base.html" %}
+
+{% block title %}About - Peak{% endblock %}
+
+{% block content %}
+<div class="mt-4">
+    <h1>About Peak</h1>
+
+    <p class="lead">
+        Peak is a web application built using Python and Django.
+    </p>
+
+    <p>
+        This project helps us learn web development, user authentication,
+        database management, HTML, CSS, and Bootstrap.
+    </p>
+
+    <h4>Features</h4>
+    <ul>
+        <li>User registration</li>
+        <li>Login and logout</li>
+        <li>Database integration</li>
+        <li>Responsive design</li>
+    </ul>
+
+    <a href="{% url 'index' %}" class="btn btn-warning">Back to Home</a>
+</div>
+{% endblock %}

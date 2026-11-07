@@ -1,0 +1,50 @@
+
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+ {% load static %}
+<div class="text-center mt-5">
+    <h1>Welcome to Peak!</h1>
+    <p class="lead">Your journey starts here.</p>
+      
+</div>
+<main class="container my-5">
+
+    <h2 class="mb-4">Our Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="{% static 'images/shoes.jpg' %}" alt="Shoes">
+            <h5>Running Shoes</h5>
+            <p>₹1,499</p>
+            <button class="btn btn-dark">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="{% static 'images/watch.jpg' %}" alt="Watch">
+            <h5>Smart Watch</h5>
+            <p>₹2,499</p>
+            <button class="btn btn-dark">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="{% static 'images/bag.jpg' %}" alt="Bag">
+            <h5>Hand Bag</h5>
+            <p>₹999</p>
+            <button class="btn btn-dark">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="{% static 'images/perfume.jpg' %}" alt="Perfume">
+            <h5>Perfume</h5>
+            <p>₹799</p>
+            <button class="btn btn-dark">Buy Now</button>
+        </div>
+
+    </div>
+
+</main>
+{% endblock %}

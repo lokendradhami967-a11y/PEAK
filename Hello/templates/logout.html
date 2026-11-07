@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+
+{% block title %}logout{% endblock %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <h2>You have logged out</h2>
+    <p>Thank you for visiting Kite!</p>
+
+    <a href="{% url 'login' %}" class="btn btn-warning">Login Again</a>
+    <a href="{% url 'index' %}" class="btn btn-outline-dark">Home</a>
+</div>
+{% endblock %}
